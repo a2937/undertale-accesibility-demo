@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Undertale Accessibility\\accessibility-prototype\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4BFF0CBF-CC7D-4784-A9D4-B77811672851}|accessibility-prototype.csproj|f:\\undertale accessibility\\accessibility-prototype\\scripts\\button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BFF0CBF-CC7D-4784-A9D4-B77811672851}|accessibility-prototype.csproj|solutionrelative:scripts\\button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Button.cs",
+              "DocumentMoniker": "F:\\Undertale Accessibility\\accessibility-prototype\\scripts\\Button.cs",
+              "RelativeDocumentMoniker": "scripts\\Button.cs",
+              "ToolTip": "F:\\Undertale Accessibility\\accessibility-prototype\\scripts\\Button.cs",
+              "RelativeToolTip": "scripts\\Button.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T02:12:48.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

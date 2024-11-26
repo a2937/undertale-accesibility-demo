@@ -1,0 +1,40 @@
+[gd_scene load_steps=7 format=3 uid="uid://cw0kg7vyre4ma"]
+
+[ext_resource type="Texture2D" uid="uid://bnn64mrofav5b" path="res://sprites/cursor_sheet.png" id="1_qdehc"]
+[ext_resource type="Texture2D" uid="uid://ckqtwfmxeky80" path="res://sprites/frisk.png" id="2_boas5"]
+[ext_resource type="Script" path="res://scripts/Button.cs" id="2_m0wpt"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tne0a"]
+atlas = ExtResource("1_qdehc")
+region = Rect2(210, 410, 190, 190)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cylr1"]
+radius = 92.5905
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_re5nx"]
+atlas = ExtResource("2_boas5")
+region = Rect2(49, 4, 19, 29)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(590, 318)
+
+[node name="Save" type="Sprite2D" parent="." node_paths=PackedStringArray("MyCollider")]
+position = Vector2(1028, 317)
+texture = SubResource("AtlasTexture_tne0a")
+script = ExtResource("2_m0wpt")
+MyCollider = NodePath("StaticBody2D")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Save"]
+input_pickable = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Save/StaticBody2D"]
+shape = SubResource("CircleShape2D_cylr1")
+
+[node name="Frisk" type="Sprite2D" parent="."]
+position = Vector2(492, 312)
+scale = Vector2(5, 5)
+texture = SubResource("AtlasTexture_re5nx")
+
+[connection signal="input_event" from="Save/StaticBody2D" to="Save" method="MyInputMethod"]
