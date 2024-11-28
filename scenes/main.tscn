@@ -1,8 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://cw0kg7vyre4ma"]
+[gd_scene load_steps=11 format=3 uid="uid://cw0kg7vyre4ma"]
 
 [ext_resource type="Texture2D" uid="uid://bnn64mrofav5b" path="res://sprites/cursor_sheet.png" id="1_qdehc"]
 [ext_resource type="Texture2D" uid="uid://ckqtwfmxeky80" path="res://sprites/frisk.png" id="2_boas5"]
 [ext_resource type="Script" path="res://scripts/Button.cs" id="2_m0wpt"]
+[ext_resource type="Script" path="res://scripts/SceneManager.cs" id="4_2fyka"]
+[ext_resource type="Script" path="res://scripts/GameController.cs" id="5_40eep"]
+[ext_resource type="Script" path="res://scripts/Ruins/MercyRoom.cs" id="6_cjgua"]
+[ext_resource type="TileSet" uid="uid://b21nop1n6kutr" path="res://tilesets/Ruins.tres" id="7_ec415"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tne0a"]
 atlas = ExtResource("1_qdehc")
@@ -37,4 +41,38 @@ position = Vector2(492, 312)
 scale = Vector2(5, 5)
 texture = SubResource("AtlasTexture_re5nx")
 
+[node name="SceneManager" type="Node2D" parent="."]
+script = ExtResource("4_2fyka")
+ScenePath = null
+
+[node name="GameController" type="Node2D" parent="." node_paths=PackedStringArray("streamPlayer")]
+script = ExtResource("5_40eep")
+streamPlayer = NodePath("../AudioStreamPlayer2D")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+
+[node name="Logic" type="Node2D" parent="." node_paths=PackedStringArray("MessageLabel", "StreamPlayer")]
+script = ExtResource("6_cjgua")
+SaveText = "Crinkling through the leaves fills you with determination!"
+MessageLabel = NodePath("../Label")
+StreamPlayer = NodePath("../AudioStreamPlayer2D")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+position = Vector2(500, 500)
+scale = Vector2(1.5, 1.5)
+tile_set = ExtResource("7_ec415")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 427.0
+offset_top = -3.0
+offset_right = 723.0
+offset_bottom = 20.0
+grow_horizontal = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="Click" from="Save" to="Logic" method="OnSaveClick"]
 [connection signal="input_event" from="Save/StaticBody2D" to="Save" method="MyInputMethod"]

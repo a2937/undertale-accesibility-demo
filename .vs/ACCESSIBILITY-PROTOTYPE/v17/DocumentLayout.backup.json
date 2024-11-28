@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "F:\\Undertale Accessibility\\accessibility-prototype\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4BFF0CBF-CC7D-4784-A9D4-B77811672851}|accessibility-prototype.csproj|f:\\undertale accessibility\\accessibility-prototype\\scripts\\ruins\\mercyroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BFF0CBF-CC7D-4784-A9D4-B77811672851}|accessibility-prototype.csproj|solutionrelative:scripts\\ruins\\mercyroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4BFF0CBF-CC7D-4784-A9D4-B77811672851}|accessibility-prototype.csproj|f:\\undertale accessibility\\accessibility-prototype\\scripts\\button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4BFF0CBF-CC7D-4784-A9D4-B77811672851}|accessibility-prototype.csproj|solutionrelative:scripts\\button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BFF0CBF-CC7D-4784-A9D4-B77811672851}|accessibility-prototype.csproj|f:\\undertale accessibility\\accessibility-prototype\\scripts\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BFF0CBF-CC7D-4784-A9D4-B77811672851}|accessibility-prototype.csproj|solutionrelative:scripts\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Undertale Accessibility\\accessibility-prototype\\scripts\\Door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scripts\\Door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,19 +31,50 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MercyRoom.cs",
+              "DocumentMoniker": "F:\\Undertale Accessibility\\accessibility-prototype\\scripts\\Ruins\\MercyRoom.cs",
+              "RelativeDocumentMoniker": "scripts\\Ruins\\MercyRoom.cs",
+              "ToolTip": "F:\\Undertale Accessibility\\accessibility-prototype\\scripts\\Ruins\\MercyRoom.cs",
+              "RelativeToolTip": "scripts\\Ruins\\MercyRoom.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T01:16:14.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Door.cs",
+              "DocumentMoniker": "F:\\Undertale Accessibility\\accessibility-prototype\\scripts\\Door.cs",
+              "RelativeDocumentMoniker": "scripts\\Door.cs",
+              "ToolTip": "F:\\Undertale Accessibility\\accessibility-prototype\\scripts\\Door.cs",
+              "RelativeToolTip": "scripts\\Door.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T01:07:12.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameController.cs",
+              "DocumentMoniker": "F:\\Undertale Accessibility\\accessibility-prototype\\scripts\\GameController.cs",
+              "RelativeDocumentMoniker": "scripts\\GameController.cs",
+              "ToolTip": "F:\\Undertale Accessibility\\accessibility-prototype\\scripts\\GameController.cs",
+              "RelativeToolTip": "scripts\\GameController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T00:01:10.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Button.cs",
               "DocumentMoniker": "F:\\Undertale Accessibility\\accessibility-prototype\\scripts\\Button.cs",
               "RelativeDocumentMoniker": "scripts\\Button.cs",
               "ToolTip": "F:\\Undertale Accessibility\\accessibility-prototype\\scripts\\Button.cs",
               "RelativeToolTip": "scripts\\Button.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAiwA0AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T02:12:48.986Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "WhenOpened": "2024-11-26T02:12:48.986Z"
             }
           ]
         }
