@@ -1,6 +1,7 @@
 using Godot;
 using System;
 using System.IO;
+using System.Threading.Tasks;
 
 public partial class MercyRoom : Node
 {
@@ -23,7 +24,7 @@ public partial class MercyRoom : Node
     public String GameSavedText { get; set; } = "Your game has been saved";
 
     [Export]
-    public String NorthRoomPath { get; set; } = "res:/scenes/candy_room.tscn";
+    public String NorthRoomPath { get; set; } = "res://scenes/candy_room.tscn";
 
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
@@ -39,16 +40,16 @@ public partial class MercyRoom : Node
     {
         StreamPlayer.Stream = SaveSound;
         StreamPlayer.Play();
-        StreamPlayer.Finished -= PlaySaveClip;
         MessageLabel.Text = GameSavedText;
+        MessageLabel.Text = "";
     }
 
-    public void OnSaveClick()
+    public async void OnSaveClick()
     {
-        StreamPlayer.Stream = SaveNarration;
         MessageLabel.Text = SaveText;
-        StreamPlayer.Play();
-        StreamPlayer.Finished += PlaySaveClip;
+        StreamPlayer.Stream = SaveNarration;
+        await ToSignal(GetTree().CreateTimer(1), "timeout");
+        PlaySaveClip();
     }
 
     public void OnGoNorth()
