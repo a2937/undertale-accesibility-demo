@@ -8,6 +8,12 @@ public partial class Button : Node
     [Signal]
     public delegate void ClickEventHandler();
 
+    [Export]
+    private FriskMove frisk;
+
+    [Export]
+    private Node2D activateLocation;
+
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
     {
@@ -21,6 +27,10 @@ public partial class Button : Node
             if (mousButt.Pressed)
             {
                 EmitSignal(SignalName.Click);
+                if (activateLocation != null)
+                {
+                    frisk.WalkTo(activateLocation);
+                }
                 //Do things
             }
         }

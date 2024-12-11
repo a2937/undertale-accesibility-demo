@@ -1,0 +1,14 @@
+[gd_resource type="SpriteFrames" load_steps=2 format=3 uid="uid://bloltvp3mtr5t"]
+
+[ext_resource type="Texture2D" uid="uid://bvxra7w7u0i4h" path="res://sprites/Frisk/frisk_face_up_center.tres" id="1_r0mvt"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_r0mvt")
+}],
+"loop": true,
+"name": &"stand_up",
+"speed": 5.0
+}]
