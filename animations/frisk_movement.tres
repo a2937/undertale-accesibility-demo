@@ -11,4 +11,9 @@ animations = [{
 "loop": true,
 "name": &"stand_up",
 "speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"walk_up",
+"speed": 5.0
 }]
