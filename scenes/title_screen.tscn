@@ -27,6 +27,7 @@ text = "Quit"
 
 [node name="Game Controller" type="Node2D" parent="."]
 script = ExtResource("1_7fnlw")
+MainRoomPath = "res://scenes/candy_room.tscn"
 
 [connection signal="pressed" from="Start Button" to="Game Controller" method="GoToMainScene"]
 [connection signal="pressed" from="Quit Button" to="Game Controller" method="Quit"]
