@@ -7,9 +7,13 @@ public partial class Weapon : BaseItem
     [Export]
     public int AttackBoost { get; set; }
 
-    [Export]
-    public int NegotiateOnePrice { get; set; }
+    public Weapon() : this(-1, null, null, -1, 0, 0, 0, 0)
+    {
 
-    [Export]
-    public int NegotiateTwoPrice { get; set; }
+    }
+
+    public Weapon(int itemID, string name, string flavorText, int buyPrice, int sellPrice, int negotiateOnePrice, int negotiateTwoPrice, int attackBoost) : base(itemID, name, flavorText, buyPrice, sellPrice, negotiateOnePrice, negotiateTwoPrice)
+    {
+        AttackBoost = attackBoost;
+    }
 }

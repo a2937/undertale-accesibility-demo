@@ -7,7 +7,7 @@ public abstract partial class BaseItem : Resource
     public int ItemID { get; set; }
 
     [Export]
-    public int Name { get; set; }
+    public string Name { get; set; }
 
     [Export]
     public string FlavorText { get; set; }
@@ -19,9 +19,24 @@ public abstract partial class BaseItem : Resource
     public int SellPrice { get; set; }
 
     [Export]
-    public int NegotatieOnePrice { get; set; }
+    public int NegotiateOnePrice { get; set; }
 
     [Export]
-    public int NegotatieTwoPrice { get; set; }
+    public int NegotiateTwoPrice { get; set; }
+
+    protected BaseItem() : this(-1, null, null, -1, 0, 0, 0)
+    {
+    }
+
+    protected BaseItem(int itemID, string name, string flavorText, int buyPrice, int sellPrice, int negotiateOnePrice, int negotiateTwoPrice)
+    {
+        ItemID = itemID;
+        Name = name;
+        FlavorText = flavorText;
+        BuyPrice = buyPrice;
+        SellPrice = sellPrice;
+        NegotiateOnePrice = negotiateOnePrice;
+        NegotiateTwoPrice = negotiateTwoPrice;
+    }
 }
 
